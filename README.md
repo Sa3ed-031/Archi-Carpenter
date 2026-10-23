@@ -57,7 +57,7 @@ This is a concept project built for portfolio purposes and is not affiliated wit
 
 **Saeed Al-Haj Hussein**, Front-End Developer
 
-- 🌐 Portfolio: [YOUR-PORTFOLIO-URL](https://sa3ed-portfolio.netlify.app)
+- 🌐 Portfolio: [sa3ed-portfolio](https://sa3ed-portfolio.netlify.app)
 - 💼 LinkedIn: [sa3ed-al-haj-hussein](https://www.linkedin.com/in/sa3ed-al-haj-hussein/)
 - 📧 Email: saeedalhajwork@gmail.com
 
