@@ -7,7 +7,7 @@ export default function QualityWorkMapShip() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
           laborum tempore hic minus molestias.
         </p>
-        <form className="flex-items-center">
+        <form className="flex-items-center" onSubmit={(e) => e.preventDefault()}>
           <div className="name-email">
             <input type="email" name="email" id="email" placeholder="Email" />
             <input type="text" name="name" id="name" placeholder="Name" />

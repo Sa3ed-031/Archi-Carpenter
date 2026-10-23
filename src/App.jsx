@@ -41,23 +41,25 @@ function App() {
       </Routes>
 
       <div className="contact flex items-center justify-between">
-        <p>We Are the Leading ao Carpenter Company</p>
-        <button className="uppercase">contact us now</button>
+        <p>We Are the Leading Architectural Carpenter Company</p>
+        <Link to="/contactus" className="uppercase">
+          contact us now
+        </Link>
       </div>
 
       <Footer />
     </div>
   );
+}
 
-  function ScrollToTop() {
-    const { pathname } = useLocation();
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    }, [pathname]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
 
-    return null;
-  }
+  return null;
 }
 
 export default App;

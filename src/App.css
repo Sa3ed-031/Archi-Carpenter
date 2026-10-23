@@ -186,7 +186,10 @@ p {
         color: var(--container-bg-color);
         background-color: var(--main-color);
 
-        button {
+        a {
+            padding: 0.6em 1.2em;
+            border-radius: var(--main-border-radius);
+            color: var(--container-bg-color);
             border: 1px solid var(--container-bg-color);
             background-color: var(--main-color);
             transition: all var(--main-duration);

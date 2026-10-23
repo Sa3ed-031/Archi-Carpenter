@@ -82,13 +82,17 @@ export default function Contact() {
 
         <div className="right flex quality-workmanship">
           <div className="quality-content">
-            <form className="flex items-start h-full flex-col justify-evenly">
+            <form
+              className="flex items-start h-full flex-col justify-evenly"
+              onSubmit={(e) => e.preventDefault()}
+            >
               <div className="name-email">
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  value={formInfo.email == "" ? "Email" : formInfo.email}
+                  placeholder="Email"
+                  value={formInfo.email}
                   onChange={(e) => {
                     setFormInfo({ ...formInfo, email: e.target.value });
                   }}
@@ -97,7 +101,8 @@ export default function Contact() {
                   type="text"
                   name="name"
                   id="name"
-                  value={formInfo.name == "" ? "Name" : formInfo.name}
+                  placeholder="Name"
+                  value={formInfo.name}
                   onChange={(e) => {
                     setFormInfo({ ...formInfo, name: e.target.value });
                   }}
@@ -108,7 +113,8 @@ export default function Contact() {
                 type="text"
                 name="phone"
                 id="phone"
-                value={formInfo.phone == "" ? "Phone" : formInfo.phone}
+                placeholder="Phone"
+                value={formInfo.phone}
                 onChange={(e) => {
                   setFormInfo({ ...formInfo, phone: e.target.value });
                 }}
@@ -117,7 +123,8 @@ export default function Contact() {
               <textarea
                 name="message"
                 id="message"
-                value={formInfo.message == "" ? "Message" : formInfo.message}
+                placeholder="Message"
+                value={formInfo.message}
                 onChange={(e) => {
                   setFormInfo({ ...formInfo, message: e.target.value });
                 }}

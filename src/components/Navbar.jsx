@@ -9,7 +9,11 @@ import Logo from "./Logo";
 
 const Navbar = ({ showMenu, setShowMenu }) => {
   return (
-    <header id="home" className="h-20 flex items-center justify-between">
+    <header
+      id="home"
+      className="h-20 flex items-center justify-between"
+      style={{ zIndex: 500 }}
+    >
       <Logo />
       <IconButton
         aria-label="menu"
@@ -31,7 +35,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           <NavLink
             to={item.link}
             key={index}
-            className={`nav-link ${({ isActive }) => (isActive ? "active" : undefined)}`}
+            className="nav-link"
             onClick={() => setShowMenu(false)}
           >
             {item.name}

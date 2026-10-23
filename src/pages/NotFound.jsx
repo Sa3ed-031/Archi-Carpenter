@@ -10,7 +10,7 @@ export default function NotFound({ about = false }) {
         ) : (
           <>
             <span>404</span>
-            <h1>Opps..Page Not Found!</h1>
+            <h1>Oops..Page Not Found!</h1>
           </>
         )}
         <p>

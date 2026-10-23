@@ -24,7 +24,7 @@ export default function About() {
       </div>
 
       <div className="about-page-features flex-items-center justify-center gap-2">
-        {[30, +150, +100].map((item, i) => (
+        {["30", "+150", "+100"].map((item, i) => (
           <div key={i} className={`${item == "+150" ? "special" : ""}`}>
             <span>{item}</span>
             <p>Lorem ipsum dolor sit.</p>

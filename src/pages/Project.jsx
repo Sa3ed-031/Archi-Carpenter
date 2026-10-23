@@ -18,7 +18,9 @@ export default function Project() {
   const questionRefs = useRef([]);
 
   useEffect(() => {
-    questionRefs.current.forEach((element) => {
+    const questionElements = [...questionRefs.current];
+
+    questionElements.forEach((element) => {
       if (!element) return;
 
       gsap.fromTo(
@@ -48,7 +50,7 @@ export default function Project() {
       ScrollTrigger.getAll().forEach((trigger) => {
         if (
           trigger.vars?.trigger &&
-          questionRefs.current.includes(trigger.vars.trigger)
+          questionElements.includes(trigger.vars.trigger)
         ) {
           trigger.kill();
         }
@@ -59,7 +61,6 @@ export default function Project() {
   const { projId } = useParams();
 
   function handleDivRightOurQuestionClick(div) {
-    console.log(projId);
     div == "first"
       ? setShowRightOurQuestionP({
           ...showRightOurQuestionP,

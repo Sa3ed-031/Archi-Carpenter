@@ -25,22 +25,22 @@
 
 ## 🛠️ Tech Stack
 
-| Category | Tools |
-|---|---|
-| Framework | React.js |
-| Routing | React Router |
-| Styling | CSS, Material-UI |
-| Map | Leaflet |
-| Animations | GSAP |
+| Category   | Tools            |
+| ---------- | ---------------- |
+| Framework  | React.js         |
+| Routing    | React Router     |
+| Styling    | CSS, Material-UI |
+| Map        | Leaflet          |
+| Animations | GSAP             |
 
 ## 🚀 Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/Sa3ed-031/archi-carpenter.git
+git clone https://github.com/Sa3ed-031/Archi-Carpenter.git
 
 # Go to the project folder
-cd archi-carpenter
+cd Archi-Carpenter
 
 # Install dependencies
 npm install
