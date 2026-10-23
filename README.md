@@ -1,16 +1,66 @@
-# React + Vite
+<h1 align="center">🪚 Archi Carpenter</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A modern, responsive business website concept for a woodworking & carpentry company.
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://sa3ed-archi-carpenter.netlify.app"><img src="https://img.shields.io/badge/Live_Demo-8B5A2B?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="./preview.png" alt="Archi Carpenter preview" width="800" />
+</p>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Multi-page layout** with React Router: Home, Services, Projects, About and Contact
+- **Fully responsive** design built with CSS and media queries
+- **Interactive location map** on the contact page using Leaflet
+- **Smooth animations** powered by GSAP
+- **Lead-generation forms** to help the business capture customer requests
+- **Pricing plans** and services showcase sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| Framework | React.js |
+| Routing | React Router |
+| Styling | CSS, Material-UI |
+| Map | Leaflet |
+| Animations | GSAP |
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Sa3ed-031/archi-carpenter.git
+
+# Go to the project folder
+cd archi-carpenter
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 📌 Note
+
+This is a concept project built for portfolio purposes and is not affiliated with a real company.
+
+## 👤 Author
+
+**Saeed Al-Haj Hussein**, Front-End Developer
+
+- 🌐 Portfolio: [YOUR-PORTFOLIO-URL](https://sa3ed-portfolio.netlify.app)
+- 💼 LinkedIn: [sa3ed-al-haj-hussein](https://www.linkedin.com/in/sa3ed-al-haj-hussein/)
+- 📧 Email: saeedalhajwork@gmail.com
+
+---
+
+<p align="center">💼 Need a website for your business? <a href="mailto:saeedalhajwork@gmail.com">Let's talk!</a></p>
