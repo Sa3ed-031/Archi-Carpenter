@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="./preview.png" alt="Archi Carpenter preview" width="800" />
+<img src="./public/preview.png" alt="Archi Carpenter preview" width="800" />
 </p>
 
 ---
