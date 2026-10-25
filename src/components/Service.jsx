@@ -10,9 +10,9 @@ export default function Service({ img = 1 }) {
       <div className="srv-content">
         <h3>Attention to Detail</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          fuga aliquam voluptate, facilis similique, repellat esse architecto
-          debitis.
+          From precise measurements to a flawless hand-sanded finish, we
+          treat every cabinet, door and table as a piece of fine, lasting
+          craftsmanship.
         </p>
         <button className="hover-scale-btn">Request</button>
       </div>

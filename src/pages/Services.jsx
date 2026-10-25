@@ -29,9 +29,9 @@ export default function Services() {
         <div className="content not-found-services-projects-content flex-items-center">
           <span>Services</span>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus in
-            facilis amet earum ullam blanditiis, aliquam labore dolores fugiat
-            repellat accusantium.
+            From custom furniture and fitted kitchens to solid wood doors and
+            full renovations, Archi Carpenter crafts every piece with care,
+            precision and lasting quality.
           </p>
         </div>
       </div>
@@ -40,8 +40,8 @@ export default function Services() {
         <div className="left">
           <h2>We Will Make It a Valuable Item</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas
-            esse consectetur, blanditiis consequatur omnis quia cumque.
+            We select premium hardwoods and finish every joint by hand, turning
+            raw timber into furniture your family will treasure for years.
           </p>
           {ulForProfAndPricing}
           <button className="hover-scale-btn">Learn More</button>
@@ -51,7 +51,7 @@ export default function Services() {
             <div className="box">
               <DiamondIcon />
               <h3>Professionals</h3>
-              <p>Lorem ipsum dolor sit.</p>
+              <p>Skilled master carpenters.</p>
             </div>
             <div className="img bg-img"></div>
           </div>
@@ -65,8 +65,8 @@ export default function Services() {
             <div className="left">
               <h1>Service We Provide</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-                tempore ipsum modi, Praesentium obcaecati perspiciatis beatae.
+                Whether it is a single bespoke shelf or a complete home fit-out,
+                our team handles design, build and installation end to end.
               </p>
             </div>
             <button className="hover-scale-btn">Learn More</button>
@@ -85,8 +85,8 @@ export default function Services() {
         <main className="flex flex-col justify-center gap-4">
           <h1>Our Pricing</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            mollitia eum sed commodi, numquam sit consectetur.
+            Clear, honest pricing with no hidden costs. Choose the plan that
+            fits your project and we will take care of the rest.
           </p>
           {ulForProfAndPricing}
           <div className="renovations">
@@ -104,8 +104,8 @@ export default function Services() {
           <div className="basic-plan flex-items-center flex-col justify-center gap-4">
             <h2>Basic Plan</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              in sunt repudiandae.
+              Ideal for small repairs, door fitting and simple custom shelving
+              in a single room.
             </p>
             <div className="price">
               <span>$34</span>
@@ -117,8 +117,8 @@ export default function Services() {
           <div className="basic-plan premuim-plan flex-items-center flex-col justify-center gap-4">
             <h2>Premium Plan</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              in sunt repudiandae.
+              Full kitchens, bespoke furniture and whole-home renovations with
+              priority support.
             </p>
             <div className="price">
               <span>$74</span>
@@ -136,8 +136,8 @@ export default function Services() {
         <div className="header flex flex-col gap-3">
           <h1 className="font-bold">How We Work</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            nam saepe, Tempore quae atque.
+            A simple three-step process that takes your idea from first sketch
+            to finished, installed piece.
           </p>
         </div>
         <div className="features flex-items-center justify-evenly">
@@ -147,8 +147,8 @@ export default function Services() {
             </div>
             <h2>Submit A Request</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              temporibus doloremque, id repellat architecto ullam mollitia qui
+              Tell us about your project, share photos or measurements, and we
+              will arrange a free consultation at a time that suits you best.
             </p>
           </div>
           <div className="feature">
@@ -157,8 +157,8 @@ export default function Services() {
             </div>
             <h2>Submit A Request</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              temporibus doloremque, id repellat architecto ullam mollitia qui
+              Our designers prepare drawings, wood samples and a detailed quote,
+              then refine every detail with you until the plan feels just right.
             </p>
           </div>
           <div className="feature">
@@ -167,8 +167,8 @@ export default function Services() {
             </div>
             <h2>Submit A Request</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              temporibus doloremque, id repellat architecto ullam mollitia qui
+              We build and install your piece on schedule, and you pay securely
+              in stages, with the final balance due only once you are satisfied.
             </p>
           </div>
         </div>

@@ -14,8 +14,8 @@ export default function NotFound({ about = false }) {
           </>
         )}
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum rem nemo
-          aperiam est necessitatibus delectus
+          Skilled craftsmanship, honest advice and beautiful woodwork built to
+          last for every home and business
         </p>
         {about ? null : (
           <Link to="/home">

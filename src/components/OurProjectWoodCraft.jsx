@@ -24,8 +24,8 @@ export default function OurProjectWoodCraft() {
     <div className="our-project-woodcraft flex-items-center flex-col">
       <h1 className="font-bold">Our Project Woodcraft</h1>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-        voluptatibus consectetur doloribus magni cumque vitae odit similique
+        Browse a selection of our recent work, from fitted kitchens and
+        oak staircases to bespoke tables, doors and complete renovations
       </p>
       <div className="woodcrafts w-full flex">
         {projectImages.map((img, index) => (

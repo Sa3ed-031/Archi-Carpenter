@@ -30,8 +30,8 @@ export default function Contact() {
         <div className="content not-found-services-projects-content flex-items-center">
           <span>Contact Us</span>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum rem
-            nemo aperiam est necessitatibus delectus
+            Planning a new kitchen, custom furniture or a renovation? Reach out
+            and let's bring your ideas to life
           </p>
         </div>
       </div>
@@ -40,8 +40,8 @@ export default function Contact() {
         <div className="left">
           <h1 className="font-bold">Get In Touch</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            maxime quas deserunt illo similique.
+            Our team replies to every enquiry within one business day with
+            advice and a free estimate.
           </p>
 
           <div className="links flex gap-4 flex-wrap py-6">
@@ -57,7 +57,7 @@ export default function Contact() {
               <div key={i} className="link">
                 <item.Icon />
                 <span>{item.span}</span>
-                <p>Lorem ipsum dolor sit.</p>
+                <p>We're here to help.</p>
               </div>
             ))}
           </div>
@@ -65,8 +65,8 @@ export default function Contact() {
           <div className="media  flex gap-4 flex-col py-2">
             <h2 className="font-bold text-xl">Social Media:</h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-              nobis at. Quisquam vel laborum cum odio earum cumque libero.
+              Follow us for behind-the-scenes workshop videos, finished
+              projects and design inspiration for your home and office.
             </p>
             <div className="media-links flex gap-1">
               {[FacebookIcon, XIcon, YouTubeIcon, WhatsAppIcon].map(

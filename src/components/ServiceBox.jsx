@@ -9,8 +9,8 @@ export default function ServiceBox({ active }) {
       <DiamondIcon className="icon" />
       <h3 className="font-bold text-lg">Place Renovation</h3>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aliquid
-        facilis numquam dolorum accusantium id laborum debitis veniam.
+        Transform any room with new flooring, built-in storage, doors and
+        trim, carefully planned and finished to match your existing style.
       </p>
       <span className="cursor-pointer">
         Learn More <KeyboardDoubleArrowRightIcon />

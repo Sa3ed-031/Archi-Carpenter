@@ -16,8 +16,8 @@ export default function About() {
         <div className="left">
           <h2>We Are Custom Woodworking</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas
-            esse consectetur, blanditiis consequatur omnis quia cumque.
+            Archi Carpenter is a family-run workshop building bespoke furniture,
+            kitchens and doors that blend timeless craft with modern design.
           </p>
           <button className="hover-scale-btn">Learn More</button>
         </div>
@@ -27,7 +27,7 @@ export default function About() {
         {["30", "+150", "+100"].map((item, i) => (
           <div key={i} className={`${item == "+150" ? "special" : ""}`}>
             <span>{item}</span>
-            <p>Lorem ipsum dolor sit.</p>
+            <p>Crafted with pride.</p>
           </div>
         ))}
       </div>
@@ -36,8 +36,8 @@ export default function About() {
         <div className="quality-content flex-items-center flex-col">
           <h1>Quality Workmanship At Competitive Prices</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-            laborum tempore hic minus molestias.
+            Expert joinery, premium timber and fair pricing on every project,
+            big or small, done right.
           </p>
           <div className="features flex justify-center flex-wrap gap-2">
             <Feature />
@@ -52,8 +52,8 @@ export default function About() {
         <div className="left flex flex-col gap-2 justify-between">
           <h1 className="font-bold">Expert Team</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-            fuga excepturi impedit eum cumque, earum dolorum maiores,
+            Our carpenters, joiners and designers bring decades of combined
+            experience to every kitchen, staircase and custom piece we build.
           </p>
           <span>Hi there</span>
           <span>Hi there</span>
@@ -68,7 +68,7 @@ export default function About() {
       <div className="about-page-newsletter flex justify-center">
         <div className="left flex flex-col">
           <h1>Our Newsletters</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>Get woodworking tips, new projects and seasonal offers.</p>
         </div>
         <div className="right flex-items-center">
           <input type="text" placeholder="Email" />
@@ -88,7 +88,7 @@ function Feature({ white = false }) {
     >
       <ForestIcon />
       <span>Experienced</span>
-      <p>Lorem ipsum</p>
+      <p>Since 2006</p>
     </div>
   );
 }

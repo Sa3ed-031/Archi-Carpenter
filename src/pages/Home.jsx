@@ -109,10 +109,10 @@ export default function Home() {
         <div className="landing-2-content">
           <h2>Custom Woodwork, Personalized for Your Home</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint
-            officiis vel expedita. Itaque deleniti, voluptatem esse saepe
-            facilis veritatis totam dolores et? Autem laborum quisquam itaque
-            dolorem ad minus!
+            For over two decades, Archi Carpenter has designed and built custom
+            kitchens, wardrobes, doors and furniture tailored to the way you
+            live. Every piece is measured, crafted and installed by our own
+            skilled team to last a lifetime.
           </p>
         </div>
       </div>

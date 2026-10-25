@@ -19,9 +19,9 @@ export default function FeatureCard({ img, className }) {
       </div>
       <h3>Attention to Detail</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga
-        aliquam voluptate, facilis similique, sint autem explicabo, adipisci
-        architecto debitis.
+        Every joint, edge and finish is checked by hand. We take the time to
+        get the small things right, so your furniture looks and feels perfect
+        for years to come.
       </p>
     </div>
   );

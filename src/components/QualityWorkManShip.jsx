@@ -4,8 +4,8 @@ export default function QualityWorkMapShip() {
       <div className="quality-content flex-items-center flex-col">
         <h1>Quality Workmanship At Competitive Prices</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-          laborum tempore hic minus molestias.
+          Tell us about your project and get a free, no-obligation quote
+          from our expert carpenters.
         </p>
         <form className="flex-items-center" onSubmit={(e) => e.preventDefault()}>
           <div className="name-email">

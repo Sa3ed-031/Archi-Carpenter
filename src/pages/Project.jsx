@@ -91,9 +91,9 @@ export default function Project() {
         <div className="content not-found-services-projects-content flex-items-center">
           <span>Project {projId}</span>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus in
-            facilis amet earum ullam blanditiis, aliquam labore dolores fugiat
-            repellat accusantium.
+            A closer look at one of our handcrafted builds, from the first
+            design sketch and timber selection to the final polished finish
+            and installation.
           </p>
         </div>
       </div>
@@ -107,11 +107,11 @@ export default function Project() {
         <div className="left flex items-start gap-4 flex-col">
           <h1>Our Question</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            cumque, voluptatum, doloribus, asperiores incidunt exercitationem
-            voluptates magnam alias, nesciunt reprehenderit. Doloribus,
-            asperiores incidunt exercitationem voluptates magnam alias, nesciunt
-            reprehenderit.
+            Have a question about your project or account? Here are answers to
+            the things our clients ask most often, from managing their profile
+            and login details to updating payment plans. If you can't find what
+            you need, our friendly team is always happy to help you by phone or
+            email.
           </p>
           <button className="hover-scale-btn">Learn More</button>
         </div>
@@ -137,8 +137,8 @@ export default function Project() {
                 display: !showRightOurQuestionP.firstDiv ? "none" : "flex",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veniam delectus eius aut praesentium, labore magnam asperiores.
+              Open your dashboard, go to Profile Settings, click your current
+              photo and upload a new image, then press Save to confirm.
             </p>
           </div>
 
@@ -163,8 +163,8 @@ export default function Project() {
                 display: !showRightOurQuestionP.secondDiv ? "none" : "flex",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veniam delectus eius aut praesentium, labore magnam asperiores.
+              Go to Account Security, enter your current password, choose a
+              new one and confirm it. You will receive an email notification.
             </p>
           </div>
 
@@ -189,8 +189,8 @@ export default function Project() {
                 display: !showRightOurQuestionP.thirdDiv ? "none" : "flex",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veniam delectus eius aut praesentium, labore magnam asperiores.
+              Visit Billing, select Change Plan, pick Basic or Premium and
+              choose PayPal at checkout to complete the switch securely.
             </p>
           </div>
         </div>

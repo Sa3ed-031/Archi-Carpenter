@@ -47,7 +47,7 @@ export default function Project({ img }) {
       <img src={imageSrc} alt="" width="100%" />
       <div className="project-info">
         <h3>Modern Living-Room</h3>
-        <p>Lorem ipsum dolor sit.</p>
+        <p>Custom oak shelving.</p>
       </div>
     </Link>
   );
