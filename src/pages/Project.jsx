@@ -92,8 +92,8 @@ export default function Project() {
           <span>Project {projId}</span>
           <p>
             A closer look at one of our handcrafted builds, from the first
-            design sketch and timber selection to the final polished finish
-            and installation.
+            design sketch and timber selection to the final polished finish and
+            installation.
           </p>
         </div>
       </div>
@@ -163,8 +163,8 @@ export default function Project() {
                 display: !showRightOurQuestionP.secondDiv ? "none" : "flex",
               }}
             >
-              Go to Account Security, enter your current password, choose a
-              new one and confirm it. You will receive an email notification.
+              Go to Account Security, enter your current password, choose a new
+              one and confirm it. You will receive an email notification.
             </p>
           </div>
 
