@@ -1,43 +1,29 @@
 import { Link } from "react-router-dom";
 
-import project1 from "../assets/pinterest-pics/project-1.jpg";
-import project2 from "../assets/pinterest-pics/project-2.jpg";
-import project3 from "../assets/pinterest-pics/project-3.jpg";
-import project4 from "../assets/pinterest-pics/project-4.jpg";
-import project5 from "../assets/pinterest-pics/project-5.jpg";
-import project6 from "../assets/pinterest-pics/project-6.jpg";
-import project7 from "../assets/pinterest-pics/project-7.jpg";
-import project8 from "../assets/pinterest-pics/project-8.jpg";
-import project9 from "../assets/pinterest-pics/project-9.jpg";
-import project10 from "../assets/pinterest-pics/project-10.jpg";
-import project11 from "../assets/pinterest-pics/project-11.jpg";
-import project12 from "../assets/pinterest-pics/project-12.jpg";
-import project13 from "../assets/pinterest-pics/project-13.jpg";
-import project14 from "../assets/pinterest-pics/project-14.jpg";
-import project15 from "../assets/pinterest-pics/project-15.jpg";
-import project16 from "../assets/pinterest-pics/project-16.jpg";
+import projectImages from "../data/projectImages";
 
-const projectImages = {
-  1: project1,
-  2: project2,
-  3: project3,
-  4: project4,
-  5: project5,
-  6: project6,
-  7: project7,
-  8: project8,
-  9: project9,
-  10: project10,
-  11: project11,
-  12: project12,
-  13: project13,
-  14: project14,
-  15: project15,
-  16: project16,
+const projectInfo = {
+  1: { title: "Modern Living Room", text: "Custom oak shelving." },
+  2: { title: "Shaker Kitchen", text: "Painted ash cabinets." },
+  3: { title: "Walnut Dining Table", text: "Seats eight, solid top." },
+  4: { title: "Floating Staircase", text: "Oak treads, steel rail." },
+  5: { title: "Master Wardrobe", text: "Sliding fitted doors." },
+  6: { title: "Home Office", text: "Built-in desk and shelves." },
+  7: { title: "Garden Pergola", text: "Cedar frame, slatted roof." },
+  8: { title: "Entrance Door", text: "Solid oak, hand-finished." },
+  9: { title: "Kids' Bedroom", text: "Bunk bed with storage." },
+  10: { title: "Media Wall", text: "Hidden-cable TV unit." },
+  11: { title: "Boutique Counter", text: "Reclaimed pine retail desk." },
+  12: { title: "Reading Nook", text: "Window seat with drawers." },
+  13: { title: "Hardwood Deck", text: "Ipe boards, 40 m²." },
+  14: { title: "Bathroom Vanity", text: "Teak, water-sealed." },
+  15: { title: "Library Wall", text: "Floor-to-ceiling cases." },
+  16: { title: "Antique Restoration", text: "Victorian dresser revived." },
 };
 
 export default function Project({ img }) {
-  const imageSrc = projectImages[img] || project1;
+  const imageSrc = projectImages[img] || projectImages[1];
+  const { title, text } = projectInfo[img] || projectInfo[1];
 
   return (
     <Link
@@ -46,8 +32,8 @@ export default function Project({ img }) {
     >
       <img src={imageSrc} alt="" width="100%" />
       <div className="project-info">
-        <h3>Modern Living-Room</h3>
-        <p>Custom oak shelving.</p>
+        <h3>{title}</h3>
+        <p>{text}</p>
       </div>
     </Link>
   );

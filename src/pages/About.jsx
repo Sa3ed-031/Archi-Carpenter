@@ -24,10 +24,14 @@ export default function About() {
       </div>
 
       <div className="about-page-features flex-items-center justify-center gap-2">
-        {["30", "+150", "+100"].map((item, i) => (
-          <div key={i} className={`${item == "+150" ? "special" : ""}`}>
-            <span>{item}</span>
-            <p>Crafted with pride.</p>
+        {[
+          { value: "30", label: "Skilled craftsmen" },
+          { value: "+150", label: "Kitchens installed" },
+          { value: "+100", label: "Five-star reviews" },
+        ].map((item, i) => (
+          <div key={i} className={`${item.value == "+150" ? "special" : ""}`}>
+            <span>{item.value}</span>
+            <p>{item.label}</p>
           </div>
         ))}
       </div>
@@ -40,10 +44,10 @@ export default function About() {
             big or small, done right.
           </p>
           <div className="features flex justify-center flex-wrap gap-2">
-            <Feature />
-            <Feature white />
-            <Feature white />
-            <Feature />
+            <Feature title="Experienced" text="Since 2006" />
+            <Feature white title="Fully Insured" text="Public liability cover" />
+            <Feature white title="Guaranteed" text="10-year warranty" />
+            <Feature title="On Schedule" text="Agreed dates, kept" />
           </div>
         </div>
       </div>
@@ -55,8 +59,8 @@ export default function About() {
             Our carpenters, joiners and designers bring decades of combined
             experience to every kitchen, staircase and custom piece we build.
           </p>
-          <span>Hi there</span>
-          <span>Hi there</span>
+          <span>12 master carpenters and certified joiners</span>
+          <span>In-house designers for 3D plans and drawings</span>
           <button className="hover-scale-btn">See More</button>
         </div>
         <div className="right flex gap-2">
@@ -79,7 +83,7 @@ export default function About() {
   );
 }
 
-function Feature({ white = false }) {
+function Feature({ white = false, title, text }) {
   return (
     <div
       className={`feature ${
@@ -87,8 +91,8 @@ function Feature({ white = false }) {
       } p-6 rounded-sm w-[45%] text-center flex-items-center flex-col`}
     >
       <ForestIcon />
-      <span>Experienced</span>
-      <p>Since 2006</p>
+      <span>{title}</span>
+      <p>{text}</p>
     </div>
   );
 }

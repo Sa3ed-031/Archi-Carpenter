@@ -14,11 +14,10 @@ const Footer = () => {
         <div className="logo-section">
           <Logo />
           <p>
-            We are passionate about transforming spaces into stunning,
-            functional, and personalized environments. With years of experience
-            in the industry, we specialize in creating exceptional interior
-            designs that reflect our clients unique style and meet their
-            specific needs.
+            Archi Carpenter is a London woodworking studio building custom
+            furniture, fitted kitchens, doors and staircases since 2006. Every
+            piece is designed, made and installed by our own craftsmen to suit
+            your home and last for generations.
           </p>
         </div>
 
@@ -58,27 +57,27 @@ const Footer = () => {
           <ul>
             <li>
               <KeyboardDoubleArrowRightIcon className="icon" />
-              100 S Main St, Los Angeles, CA
+              18 Timberyard Lane, London SE1, UK
             </li>
             <hr />
             <li>
               <KeyboardDoubleArrowRightIcon className="icon" />
-              Phone: (208) 333 9296
+              Phone: +44 20 7946 0123
             </li>
             <hr />
             <li>
               <KeyboardDoubleArrowRightIcon className="icon" />
-              Fax: (208) 333 9298
+              Hours: Mon–Sat, 8am to 6pm
             </li>
             <hr />
             <li>
               <KeyboardDoubleArrowRightIcon className="icon" />
-              Email: contact@archi-interior.com
+              Email: hello@archicarpenter.co.uk
             </li>
             <hr />
             <li>
               <KeyboardDoubleArrowRightIcon className="icon" />
-              Web: http://archi-interior.com
+              Web: www.archicarpenter.co.uk
             </li>
             <hr />
           </ul>

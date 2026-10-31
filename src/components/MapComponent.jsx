@@ -14,7 +14,7 @@ L.Icon.Default.mergeOptions({
 });
 
 function MapComponent({
-  center = [33.5138, 36.2765],
+  center = [51.5045, -0.0899],
   zoom = 13,
   height = "55vh",
 }) {
@@ -37,13 +37,11 @@ function MapComponent({
       <Marker position={center}>
         <Popup>
           <b className="font-[Roboto-Slab] text-xl">
-            {/* موقعي هنا */}
-            My Position Here
+            Archi Carpenter Workshop
           </b>
           <br />
           <span className="font-[Roboto-Slab]">
-            {/* مرحباً في دمشق */}
-            Welcome in Damascus
+            18 Timberyard Lane, London SE1, UK
           </span>
         </Popup>
       </Marker>

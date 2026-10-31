@@ -14,7 +14,7 @@ export default function QualityWorkMapShip() {
           </div>
           <textarea name="message" id="message" placeholder="Message" />
           <button className="hover-scale-btn" type="submit">
-            Submit Button
+            Send Request
           </button>
         </form>
       </div>

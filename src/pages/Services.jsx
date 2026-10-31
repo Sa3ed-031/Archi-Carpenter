@@ -10,16 +10,43 @@ import PaymentIcon from "@mui/icons-material/Payment";
 import QualityWorkMapShip from "../components/QualityWorkManShip";
 import OurProjectWoodCraft from "../components/OurProjectWoodCraft";
 
-const ulForProfAndPricing = (
+const checkList = (items) => (
   <ul className="prof-pricing-ul">
-    {Array.from({ length: 3 }).map((_, i) => (
+    {items.map((item, i) => (
       <li key={i}>
         <CheckIcon className="icon" />
-        Quick Delivery
+        {item}
       </li>
     ))}
   </ul>
 );
+
+const serviceBoxes = [
+  {
+    title: "Home Renovation",
+    text: "Transform any room with new flooring, built-in storage, doors and trim, carefully planned and finished to match your existing style.",
+  },
+  {
+    title: "Fitted Wardrobes",
+    text: "Floor-to-ceiling wardrobes with sliding or hinged doors, shelves, drawers and hanging rails arranged exactly the way you need them.",
+  },
+  {
+    title: "Kitchen Cabinetry",
+    text: "Solid wood cabinets, islands and open shelving, built in our workshop and installed with level, gap-free precision.",
+  },
+  {
+    title: "Wood Restoration",
+    text: "We repair, strip and refinish antique furniture, worn floors and old doors, bringing tired timber back to its original beauty.",
+  },
+  {
+    title: "Decking & Pergolas",
+    text: "Weather-resistant hardwood decks, pergolas and garden structures that extend your living space outdoors all year round.",
+  },
+  {
+    title: "Commercial Fit-Outs",
+    text: "Reception desks, shop counters, office shelving and wall panelling for businesses that want to make a lasting first impression.",
+  },
+];
 
 export default function Services() {
   return (
@@ -43,7 +70,11 @@ export default function Services() {
             We select premium hardwoods and finish every joint by hand, turning
             raw timber into furniture your family will treasure for years.
           </p>
-          {ulForProfAndPricing}
+          {checkList([
+            "Hand-Selected Hardwoods",
+            "Precision Hand Joinery",
+            "Durable Natural Finishes",
+          ])}
           <button className="hover-scale-btn">Learn More</button>
         </div>
         <div className="right">
@@ -72,10 +103,13 @@ export default function Services() {
             <button className="hover-scale-btn">Learn More</button>
           </div>
           <div className="box-list flex flex-wrap justify-center gap-2">
-            <ServiceBox active="active" />
-
-            {Array.from({ length: 5 }).map((_, i) => (
-              <ServiceBox key={i} />
+            {serviceBoxes.map((box, i) => (
+              <ServiceBox
+                key={i}
+                active={i === 0 ? "active" : ""}
+                title={box.title}
+                text={box.text}
+              />
             ))}
           </div>
         </div>
@@ -88,7 +122,11 @@ export default function Services() {
             Clear, honest pricing with no hidden costs. Choose the plan that
             fits your project and we will take care of the rest.
           </p>
-          {ulForProfAndPricing}
+          {checkList([
+            "Free On-Site Estimates",
+            "Fixed Quotes, No Surprises",
+            "Flexible Stage Payments",
+          ])}
           <div className="renovations">
             <span>Renovations</span>
             <span>96%</span>
@@ -112,7 +150,11 @@ export default function Services() {
               <span>/Month</span>
             </div>
             <button>Purchase Now</button>
-            {ulForProfAndPricing}
+            {checkList([
+              "2 Repair Visits per Month",
+              "Door & Hinge Adjustments",
+              "Standard Pine & MDF Options",
+            ])}
           </div>
           <div className="basic-plan premuim-plan flex-items-center flex-col justify-center gap-4">
             <h2>Premium Plan</h2>
@@ -125,7 +167,11 @@ export default function Services() {
               <span>/Month</span>
             </div>
             <button>Purchase Now</button>
-            {ulForProfAndPricing}
+            {checkList([
+              "Unlimited Priority Visits",
+              "Free 3D Design Drawings",
+              "Premium Oak & Walnut Options",
+            ])}
           </div>
         </div>
       </div>
@@ -155,7 +201,7 @@ export default function Services() {
             <div className="icon">
               <RotateRightIcon />
             </div>
-            <h2>Submit A Request</h2>
+            <h2>Design & Quote</h2>
             <p>
               Our designers prepare drawings, wood samples and a detailed quote,
               then refine every detail with you until the plan feels just right.
@@ -165,7 +211,7 @@ export default function Services() {
             <div className="icon">
               <PaymentIcon />
             </div>
-            <h2>Submit A Request</h2>
+            <h2>Build & Install</h2>
             <p>
               We build and install your piece on schedule, and you pay securely
               in stages, with the final balance due only once you are satisfied.

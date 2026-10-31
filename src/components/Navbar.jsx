@@ -57,7 +57,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           className={`phone-number flex flex-col gap-1 leading-[1rem] text-sm`}
         >
           <span className="text-lg">Call Us</span>
-          <span className="text-[#31374f]">1200 300 9000</span>
+          <span className="text-[#31374f]">+44 20 7946 0123</span>
         </div>
       </div>
     </header>

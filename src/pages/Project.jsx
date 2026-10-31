@@ -5,16 +5,35 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import project2Image from "../assets/pinterest-pics/project-2.jpg";
+import projectImages from "../data/projectImages";
 import QualityWorkMapShip from "../components/QualityWorkManShip";
 import OurProjectWoodCraft from "../components/OurProjectWoodCraft";
 
+const faqs = [
+  {
+    question: "How long does a custom carpentry project take?",
+    answer:
+      "Small pieces like shelving or a single door usually take 1–2 weeks. Fitted wardrobes take 3–4 weeks, and a full kitchen typically takes 6–8 weeks from approved design to final installation.",
+  },
+  {
+    question: "What types of wood and materials do you use?",
+    answer:
+      "We work mainly with FSC-certified oak, walnut, ash and maple, plus high-grade birch plywood for cabinet carcasses. We'll bring samples so you can compare grain, colour and finish before deciding.",
+  },
+  {
+    question: "How do you price a project, and is the quote free?",
+    answer:
+      "Yes, the site visit and quote are free. We price each job on materials, size and complexity, and give you a fixed written quote, so the price you agree is the price you pay.",
+  },
+  {
+    question: "Do you offer a warranty on your work?",
+    answer:
+      "Every piece we build and install comes with a 10-year warranty on joinery and workmanship. If anything moves, cracks or loosens through normal use, we'll come back and fix it free of charge.",
+  },
+];
+
 export default function Project() {
-  const [showRightOurQuestionP, setShowRightOurQuestionP] = useState({
-    firstDiv: false,
-    secondDiv: false,
-    thirdDiv: false,
-  });
+  const [openQuestions, setOpenQuestions] = useState(faqs.map(() => false));
   const questionRefs = useRef([]);
 
   useEffect(() => {
@@ -60,21 +79,10 @@ export default function Project() {
 
   const { projId } = useParams();
 
-  function handleDivRightOurQuestionClick(div) {
-    div == "first"
-      ? setShowRightOurQuestionP({
-          ...showRightOurQuestionP,
-          firstDiv: !showRightOurQuestionP.firstDiv,
-        })
-      : div == "second"
-        ? setShowRightOurQuestionP({
-            ...showRightOurQuestionP,
-            secondDiv: !showRightOurQuestionP.secondDiv,
-          })
-        : setShowRightOurQuestionP({
-            ...showRightOurQuestionP,
-            thirdDiv: !showRightOurQuestionP.thirdDiv,
-          });
+  function toggleQuestion(index) {
+    setOpenQuestions((prev) =>
+      prev.map((isOpen, i) => (i === index ? !isOpen : isOpen)),
+    );
   }
 
   return (
@@ -83,7 +91,7 @@ export default function Project() {
         <div
           className="img bg-img"
           style={{
-            backgroundImage: `url(${project2Image})`,
+            backgroundImage: `url(${projectImages[projId] || projectImages[2]})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -107,92 +115,42 @@ export default function Project() {
         <div className="left flex items-start gap-4 flex-col">
           <h1>Our Question</h1>
           <p>
-            Have a question about your project or account? Here are answers to
-            the things our clients ask most often, from managing their profile
-            and login details to updating payment plans. If you can't find what
-            you need, our friendly team is always happy to help you by phone or
-            email.
+            Planning a new build with us? Here are answers to the things our
+            clients ask most often, from project timelines and the timber we use
+            to how we price our work and what our warranty covers. If you can't
+            find what you need, our friendly team is always happy to help you by
+            phone or email.
           </p>
           <button className="hover-scale-btn">Learn More</button>
         </div>
         <div className="right flex flex-col gap-4">
-          <div
-            ref={(el) => (questionRefs.current[0] = el)}
-            data-question-index="0"
-          >
-            <span
-              style={{
-                color: showRightOurQuestionP.firstDiv ? "#31374f" : "",
-                backgroundColor: showRightOurQuestionP.firstDiv ? "white" : "",
-                border: showRightOurQuestionP.firstDiv ? "1px solid" : "",
-              }}
-              onClick={() => {
-                handleDivRightOurQuestionClick("first");
-              }}
+          {faqs.map((faq, i) => (
+            <div
+              key={i}
+              ref={(el) => (questionRefs.current[i] = el)}
+              data-question-index={i}
             >
-              How to Change my Photo from Admin Dashboard?
-            </span>
-            <p
-              style={{
-                display: !showRightOurQuestionP.firstDiv ? "none" : "flex",
-              }}
-            >
-              Open your dashboard, go to Profile Settings, click your current
-              photo and upload a new image, then press Save to confirm.
-            </p>
-          </div>
-
-          <div
-            ref={(el) => (questionRefs.current[1] = el)}
-            data-question-index="1"
-          >
-            <span
-              style={{
-                color: showRightOurQuestionP.secondDiv ? "#31374f" : "",
-                backgroundColor: showRightOurQuestionP.secondDiv ? "white" : "",
-                border: showRightOurQuestionP.secondDiv ? "1px solid" : "",
-              }}
-              onClick={() => {
-                handleDivRightOurQuestionClick("second");
-              }}
-            >
-              How to Change my Password easily?
-            </span>
-            <p
-              style={{
-                display: !showRightOurQuestionP.secondDiv ? "none" : "flex",
-              }}
-            >
-              Go to Account Security, enter your current password, choose a new
-              one and confirm it. You will receive an email notification.
-            </p>
-          </div>
-
-          <div
-            ref={(el) => (questionRefs.current[2] = el)}
-            data-question-index="2"
-          >
-            <span
-              style={{
-                color: showRightOurQuestionP.thirdDiv ? "#31374f" : "",
-                backgroundColor: showRightOurQuestionP.thirdDiv ? "white" : "",
-                border: showRightOurQuestionP.thirdDiv ? "1px solid" : "",
-              }}
-              onClick={() => {
-                handleDivRightOurQuestionClick("third");
-              }}
-            >
-              How to Change my Subscription Plan using PayPal?
-            </span>
-            <p
-              style={{
-                display: !showRightOurQuestionP.thirdDiv ? "none" : "flex",
-              }}
-            >
-              Visit Billing, select Change Plan, pick Basic or Premium and
-              choose PayPal at checkout to complete the switch securely.
-            </p>
-          </div>
+              <span
+                style={{
+                  color: openQuestions[i] ? "#31374f" : "",
+                  backgroundColor: openQuestions[i] ? "white" : "",
+                  border: openQuestions[i] ? "1px solid" : "",
+                }}
+                onClick={() => {
+                  toggleQuestion(i);
+                }}
+              >
+                {faq.question}
+              </span>
+              <p
+                style={{
+                  display: !openQuestions[i] ? "none" : "flex",
+                }}
+              >
+                {faq.answer}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -47,17 +47,30 @@ export default function Contact() {
           <div className="links flex gap-4 flex-wrap py-6">
             {[
               {
-                span: "+82 543 6544",
+                span: "+44 20 7946 0123",
+                text: "Mon–Sat, 8am to 6pm",
                 Icon: CallIcon,
               },
-              { span: "mail@wdcraft.co", Icon: EmailIcon },
-              { span: "wdcraft.id", Icon: InstagramIcon },
-              { span: "London Eys, UK", Icon: RoomIcon },
+              {
+                span: "hello@archicarpenter.co.uk",
+                text: "Replies within one day",
+                Icon: EmailIcon,
+              },
+              {
+                span: "@archicarpenter",
+                text: "See our latest builds",
+                Icon: InstagramIcon,
+              },
+              {
+                span: "18 Timberyard Lane, London SE1",
+                text: "Visit our workshop",
+                Icon: RoomIcon,
+              },
             ].map((item, i) => (
               <div key={i} className="link">
                 <item.Icon />
                 <span>{item.span}</span>
-                <p>We're here to help.</p>
+                <p>{item.text}</p>
               </div>
             ))}
           </div>
@@ -131,7 +144,7 @@ export default function Contact() {
               />
 
               <button className="hover-scale-btn" type="submit">
-                Submit Button
+                Send Request
               </button>
             </form>
           </div>

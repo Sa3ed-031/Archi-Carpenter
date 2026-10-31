@@ -133,7 +133,15 @@ export default function Home() {
         </div>
       </div>
 
-      <a href="#home" className="go-up">
+      <a
+        href="#home"
+        className="go-up"
+        onClick={(e) => {
+          // #home is the fixed header, so the browser won't scroll to it
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+      >
         <KeyboardDoubleArrowUpIcon className="icon" />
       </a>
     </div>
