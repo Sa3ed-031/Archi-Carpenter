@@ -1,10 +1,10 @@
-import XIcon from "@mui/icons-material/X";
-import IconButton from "@mui/material/IconButton";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import IconButton from "@mui/material/IconButton";
 import Logo from "./Logo";
 
 const Footer = () => {

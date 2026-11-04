@@ -19,11 +19,6 @@ export default function Service({ img = 1 }) {
   return (
     <div className="srv">
       <div className={`img bg-img img-${img}`}></div>
-      {/* <img
-        src={`public/pinterest-pics/service-${img}.jpg`}
-        alt=""
-        width="50%"
-      /> */}
       <div className="srv-content">
         <h3>{title}</h3>
         <p>{text}</p>

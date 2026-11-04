@@ -1,18 +1,15 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-// ICONS
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
-// COMPONENTS
 import Service from "../components/Service";
 import Project from "../components/Project";
 import FeatureCard from "../components/FeatureCard";
 import SpecialHeading from "../components/SpecialHeading";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const revealRefs = useRef([]);
@@ -137,7 +134,6 @@ export default function Home() {
         href="#home"
         className="go-up"
         onClick={(e) => {
-          // #home is the fixed header, so the browser won't scroll to it
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}

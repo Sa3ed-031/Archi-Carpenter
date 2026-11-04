@@ -1,4 +1,3 @@
-// ICONS
 import XIcon from "@mui/icons-material/X";
 import CallIcon from "@mui/icons-material/Call";
 import RoomIcon from "@mui/icons-material/Room";
@@ -8,11 +7,9 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
-// COMPONENTS
 import IconButton from "@mui/material/IconButton";
-import MapComponent from "../components/MapComponent";
-
 import { useState } from "react";
+import MapComponent from "../components/MapComponent";
 
 export default function Contact() {
   const [formInfo, setFormInfo] = useState({
@@ -78,8 +75,8 @@ export default function Contact() {
           <div className="media  flex gap-4 flex-col py-2">
             <h2 className="font-bold text-xl">Social Media:</h2>
             <p className="text-gray-500">
-              Follow us for behind-the-scenes workshop videos, finished
-              projects and design inspiration for your home and office.
+              Follow us for behind-the-scenes workshop videos, finished projects
+              and design inspiration for your home and office.
             </p>
             <div className="media-links flex gap-1">
               {[FacebookIcon, XIcon, YouTubeIcon, WhatsAppIcon].map(

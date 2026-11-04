@@ -1,10 +1,7 @@
 import { NavLink } from "react-router-dom";
-
-import IconButton from "@mui/material/IconButton";
-
-// ICONS
 import TableRowsIcon from "@mui/icons-material/TableRows";
 import CallIcon from "@mui/icons-material/Call";
+import IconButton from "@mui/material/IconButton";
 import Logo from "./Logo";
 
 const Navbar = ({ showMenu, setShowMenu }) => {

@@ -1,8 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 // حل مشكلة أيقونات Marker
@@ -36,9 +36,7 @@ function MapComponent({
       />
       <Marker position={center}>
         <Popup>
-          <b className="font-[Roboto-Slab] text-xl">
-            Archi Carpenter Workshop
-          </b>
+          <b className="font-[Roboto-Slab] text-xl">Archi Carpenter Workshop</b>
           <br />
           <span className="font-[Roboto-Slab]">
             18 Timberyard Lane, London SE1, UK

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useState, useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,7 +110,6 @@ export default function Project() {
 
       <QualityWorkMapShip />
 
-      {/* Needs To Be Responsive */}
       <div className="our-question p-8">
         <div className="left flex items-start gap-4 flex-col">
           <h1>Our Question</h1>

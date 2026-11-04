@@ -1,7 +1,7 @@
-import CabinIcon from "@mui/icons-material/Cabin";
-import CarpenterIcon from "@mui/icons-material/Carpenter";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import WbIncandescentIcon from "@mui/icons-material/WbIncandescent";
+import CarpenterIcon from "@mui/icons-material/Carpenter";
+import CabinIcon from "@mui/icons-material/Cabin";
 
 const features = {
   1: {
